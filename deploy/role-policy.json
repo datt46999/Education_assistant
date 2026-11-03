@@ -1,0 +1,34 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PullImage",
+      "Effect": "Allow",
+      "Action": ["ecr:BatchGetImage", "ecr:GetDownloadUrlForLayer", "ecr:GetAuthorizationToken"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "Logs",
+      "Effect": "Allow",
+      "Action": ["logs:CreateLogGroup", "logs:CreateLogStream", "logs:PutLogEvents", "logs:DescribeLogStreams", "logs:DescribeLogGroups"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "Tracing",
+      "Effect": "Allow",
+      "Action": ["xray:PutTraceSegments", "xray:PutTelemetryRecords", "cloudwatch:PutMetricData"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "Memory",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock-agentcore:CreateEvent", "bedrock-agentcore:GetEvent", "bedrock-agentcore:ListEvents",
+        "bedrock-agentcore:DeleteEvent", "bedrock-agentcore:ListSessions", "bedrock-agentcore:ListActors",
+        "bedrock-agentcore:RetrieveMemoryRecords", "bedrock-agentcore:ListMemoryRecords",
+        "bedrock-agentcore:GetMemoryRecord", "bedrock-agentcore:GetMemory"
+      ],
+      "Resource": "arn:aws:bedrock-agentcore:us-east-1:166672534761:memory/*"
+    }
+  ]
+}

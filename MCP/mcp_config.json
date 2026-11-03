@@ -1,0 +1,22 @@
+{
+  "student_data": {
+    "transport": "stdio",
+    "command": "python",
+    "args": ["-m", "MCP.servers.student_data_server"]
+  },
+  "academic": {
+    "transport": "stdio",
+    "command": "python",
+    "args": ["-m", "MCP.servers.academic_server"]
+  },
+  "researcher": {
+    "transport": "stdio",
+    "command": "python",
+    "args": ["-m", "MCP.servers.research_server"]
+  },
+  "tutor": {
+    "transport": "stdio",
+    "command": "python",
+    "args": ["-m", "MCP.servers.tutor_server"]
+  }
+}

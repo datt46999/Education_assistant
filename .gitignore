@@ -1,0 +1,23 @@
+# secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# agentcore / aws
+.bedrock_agentcore.yaml
+.bedrock_agentcore/
+out.json
+
+# misc
+*.log
+order_info/
+.DS_Store
+.vscode/
+.idea/

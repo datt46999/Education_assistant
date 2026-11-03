@@ -1,0 +1,53 @@
+[project]
+name = "education-assistant"
+version = "0.1.0"
+description = "Multi-agent education assistant (LangGraph + MCP) deployed on AWS Bedrock AgentCore"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    # agents
+    "langgraph",
+    "langchain-core",
+    "langchain-openai",
+    "langchain-groq",
+    "langchain-mcp-adapters",
+    "mcp",
+    "pydantic",
+    "python-dotenv",
+    "requests",
+    "rich",
+    "anyio",
+    # AWS AgentCore deploy + memory
+    "bedrock-agentcore",
+    "langgraph-checkpoint-aws",
+    "boto3",
+    # researcher agent
+    "arxiv",
+    "pymupdf",
+    "networkx",
+    "numpy",
+    "sentence-transformers",
+    "torch",  # CPU build, see [tool.uv.sources]
+    "openai",
+    "langchain-google-genai",
+]
+ 
+[dependency-groups]
+dev = [
+    "streamlit",
+    "pyarrow<26",  # 26.0.1 ships only cp311 wheels
+    "pytest",
+    "bedrock-agentcore-starter-toolkit",
+]
+ 
+[tool.uv]
+package = false
+ 
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+ 
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
+ 
