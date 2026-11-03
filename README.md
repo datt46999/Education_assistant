@@ -1,3 +1,9 @@
+
+
+
+
+
+
 # Education Assistant
 
 A multi-agent study assistant built with **LangGraph** and **MCP**, deployed on **AWS Bedrock AgentCore** with **AgentCore Memory**.
@@ -17,7 +23,7 @@ A coordinator agent reads each student request and routes it to specialised agen
 
 
 # DEMO:
-
+https://github.com/user-attachments/assets/045553aa-a62d-4296-a51c-52936a36c5c3
 
 ## Project structure
 
