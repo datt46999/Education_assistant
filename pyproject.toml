@@ -34,7 +34,7 @@ dependencies = [
 [dependency-groups]
 dev = [
     "streamlit",
-    "pyarrow<26",  # 26.0.1 ships only cp311 wheels
+    "pyarrow<26",  
     "pytest",
     "bedrock-agentcore-starter-toolkit",
 ]
