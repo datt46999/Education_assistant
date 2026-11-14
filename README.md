@@ -10,7 +10,7 @@ A coordinator agent reads each student request and routes it to specialised agen
 | --- | --- | --- |
 | **Tutor** | Solves math problems step by step and answers English / grammar questions, with the concept explained from Wikipedia | `answer_question` |
 | **Academic** | Study plans (planner), study notes (notewrite), exam and workload advice (advisor) | `ask_academic_agent` |
-| **Researcher** | Searches arXiv, ranks papers, builds a knowledge graph (Graph RAG) and summarises with citations | `search_arxiv_papers` |
+| **Researcher** | Searches arXiv and Semantic Scholar, ranks papers, builds a knowledge graph (Graph RAG) and summarises with citations | `search_arxiv_papers` |
 | **Student data** | Reads and updates the student's profile, calendar and tasks | `get_student_profile`, `list_calendar_events`, `list_tasks`, `add_task`, `update_task_status` |
 
 
