@@ -95,7 +95,7 @@ education_assistant/
 # Features of subagents:
 ## COORDINATOR:
 Pick the right tools for each request by using **open-4o-mini**  for coordination:
-- researcher tools: finding scientific papers on arXiv
+- researcher tools: finding scientific papers on arXiv and Semantic Scholar
 - academic tools: study plans (planner), study notes (notewrite), academic advice (advisor)
 - tutor tools: math problems and English/writing/grammar questions, explained with the concept from Wikipedia
 - student data tools: reading or changing the student's profile, calendar and tasks
