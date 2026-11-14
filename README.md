@@ -124,7 +124,7 @@ Interlligent multi-agent system that transforms the way student manage their aca
 Finds and explains scientific papers for the student's research question.
 
 1. Query analysis:
-   + Based on the user query, decide whether to search arXiv or answer directly.
+   + Based on the user query, decide whether to search arXiv and Semantic Scholar or answer directly.
    + Rewrite the question into several focused search queries (e.g. "recurrent neural networks", "rnn sequence modeling").
 2. arXiv search:
    + Search arXiv with each query and collect candidate papers (title, authors, date, abstract, PDF link).
@@ -132,7 +132,7 @@ Finds and explains scientific papers for the student's research question.
    + Score papers by relevance to the original question and keep the top N (default 5).
    + Explain why each selected paper fits the request.
 4. Answer with citations:
-   + Summarise each paper and write an overview, citing papers as [1], [2]... with arXiv links.
+   + Summarise each paper and write an overview, citing papers as [1], [2]... with arXiv or Semantic Scholar links.
    + Optionally use the Graph_RAG knowledge graph for a deeper, connected answer.
 
 ## Graph_RAG
