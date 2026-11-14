@@ -155,6 +155,8 @@ Builds a knowledge graph from the selected papers, so answers combine facts acro
   `BedrockAgentCoreFullAccess`, `IAMFullAccess`, `AmazonEC2ContainerRegistryFullAccess`, `CloudWatchLogsFullAccess`
 - API keys: OpenAI, Groq, Gemini, Hugging Face
 
+- Get API [SEMANTIC_SCHOLAR_API_KEY](https://www.semanticscholar.org/product/api#api-key-form)
+
 ## Configuration
 
 Create `.env` in `education_assistant/` (no quotes, no spaces around `=`, no trailing spaces):
@@ -167,6 +169,7 @@ OPENAI_API_KEY=...
 GROQ_API_KEY=...
 GEMINI_API_KEY=...
 HF_TOKEN=...
+SEMANTIC_SCHOLAR_API_KEY=....
 AGENT_RUNTIME_ARN=<filled in after the first deploy>
 ```
 
